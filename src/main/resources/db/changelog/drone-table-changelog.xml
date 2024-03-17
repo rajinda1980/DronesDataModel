@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="rajinda">
+        <createTable tableName="DRONE">
+            <column name="SERIAL_NUMBER" type="VARCHAR2(110)">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="MODEL" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="FK_MODEL" references="MODEL(DID)" />
+            </column>
+            <column name="WEIGHT" type="DECIMAL(3, 2)"/>
+            <column name="BATTERY_CAPACITY" type="DECIMAL(3, 2)"/>
+            <column name="STATE" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="FK_STATE" references="STATE(DID)" />
+            </column>
+        </createTable>
+    </changeSet>
+    
+</databaseChangeLog>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="rajinda">
+        <createTable tableName="MEDICATION">
+            <column name="DID" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="NAME" type="VARCHAR2(250)" />
+            <column name="WEIGHT" type="DECIMAL(3, 2)" />
+            <column name="CODE" type="VARCHAR2(100)" />
+            <column name="IMAGE" type="BLOB" />
+            <column name="DRONE" type="VARCHAR2(110)">
+                <constraints nullable="false" foreignKeyName="FK_MED_DRONE" references="DRONE(SERIAL_NUMBER)" />
+            </column>
+        </createTable>
+    </changeSet>
+    
+</databaseChangeLog>
