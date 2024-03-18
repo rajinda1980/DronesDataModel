@@ -23,10 +23,10 @@ public class Drone {
     private Model model;
 
     @Column(name = "WEIGHT")
-    private Double weight;
+    private Integer weight;
 
     @Column(name = "BATTERY_CAPACITY")
-    private Double capacity;
+    private Integer capacity;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "STATE")

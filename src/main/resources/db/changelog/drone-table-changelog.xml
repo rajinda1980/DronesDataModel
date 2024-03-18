@@ -12,8 +12,8 @@
             <column name="MODEL" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="FK_MODEL" references="MODEL(DID)" />
             </column>
-            <column name="WEIGHT" type="DECIMAL(3, 2)"/>
-            <column name="BATTERY_CAPACITY" type="DECIMAL(3, 2)"/>
+            <column name="WEIGHT" type="INTEGER"/>
+            <column name="BATTERY_CAPACITY" type="INTEGER"/>
             <column name="STATE" type="BIGINT">
                 <constraints nullable="false" foreignKeyName="FK_STATE" references="STATE(DID)" />
             </column>
