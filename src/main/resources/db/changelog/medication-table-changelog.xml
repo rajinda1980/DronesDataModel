@@ -18,5 +18,13 @@
             </column>
         </createTable>
     </changeSet>
-    
+
+    <changeSet id="2" author="rajinda">
+        <modifyDataType tableName="MEDICATION" columnName="WEIGHT" newDataType="INTEGER" />
+    </changeSet>
+
+    <changeSet id="3" author="rajinda">
+        <sql>ALTER TABLE MEDICATION MODIFY IMAGE LONGBLOB;</sql>
+    </changeSet>
+
 </databaseChangeLog>

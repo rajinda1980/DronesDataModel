@@ -23,13 +23,12 @@ public class Medication {
     private String name;
 
     @Column(name = "WEIGHT")
-    private Double weight;
+    private Integer weight;
 
     @Column(name = "CODE")
     private String code;
 
-    @Lob
-    @Column(name = "IMAGE")
+    @Column(name = "IMAGE", columnDefinition = "LONGBLOB")
     private byte[] image;
 
     @ManyToOne(fetch = FetchType.LAZY)
