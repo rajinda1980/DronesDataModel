@@ -27,4 +27,10 @@
         <sql>ALTER TABLE MEDICATION MODIFY IMAGE LONGBLOB;</sql>
     </changeSet>
 
+    <changeSet id="4" author="rajinda">
+        <createIndex tableName="MEDICATION" indexName="IDX_MSERIAL_NUMBER">
+            <column name="DRONE" />
+        </createIndex>
+    </changeSet>
+
 </databaseChangeLog>
