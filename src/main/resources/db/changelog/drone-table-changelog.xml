@@ -19,5 +19,11 @@
             </column>
         </createTable>
     </changeSet>
+
+    <changeSet id="2" author="rajinda">
+        <createIndex tableName="DRONE" indexName="IDX_STATE">
+            <column name="state" />
+        </createIndex>
+    </changeSet>
     
 </databaseChangeLog>
