@@ -27,16 +27,16 @@ public class DroneAudit {
     @Column(name = "SERIAL_NUMBER", nullable = false)
     private String serialNumber;
 
-    @Column(name = "BATTERY_LEVEL", nullable = false)
-    private Integer batteryLevel;
+    @Column(name = "BATTERY_CAPACITY", nullable = false)
+    private Integer batteryCapacity;
 
     @Column(name = "CHECK_TIME", nullable = false)
     private LocalDateTime checkTime;
 
-    public DroneAudit(String id, String serialNumber, Integer batteryLevel, LocalDateTime checkTime) {
+    public DroneAudit(String id, String serialNumber, Integer batteryCapacity, LocalDateTime checkTime) {
         this.id = id;
         this.serialNumber = serialNumber;
-        this.batteryLevel = batteryLevel;
+        this.batteryCapacity = batteryCapacity;
         this.checkTime = checkTime;
     }
 }

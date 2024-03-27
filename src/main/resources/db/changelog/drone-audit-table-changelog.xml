@@ -25,7 +25,7 @@
     </changeSet>
 
     <changeSet id="2" author="rajinda">
-        <renameColumn tableName="DRONE_AUDIT" oldColumnName="value" newColumnName="BATTERY_LEVEL" columnDataType="INTEGER" />
+        <renameColumn tableName="DRONE_AUDIT" oldColumnName="value" newColumnName="BATTERY_CAPACITY" columnDataType="INTEGER" />
     </changeSet>
     
 </databaseChangeLog>
