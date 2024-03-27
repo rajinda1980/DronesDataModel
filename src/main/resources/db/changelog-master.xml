@@ -9,6 +9,7 @@
     <include file="db/changelog/state-table-changelog.xml" />
     <include file="db/changelog/drone-table-changelog.xml" />
     <include file="db/changelog/medication-table-changelog.xml" />
+    <include file="db/changelog/drone-audit-table-changelog.xml" />
 
     <!-- MASTER DATA -->
     <include file="db/changelog/masterdata/master-data-changelog.xml" />
