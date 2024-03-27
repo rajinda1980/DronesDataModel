@@ -23,5 +23,9 @@
             </column>
         </createTable>
     </changeSet>
+
+    <changeSet id="2" author="rajinda">
+        <renameColumn tableName="DRONE_AUDIT" oldColumnName="value" newColumnName="BATTERY_LEVEL" columnDataType="INTEGER" />
+    </changeSet>
     
 </databaseChangeLog>
